@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2017-09-02 Sat 00:22 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="王建智" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/readtheorg.css"/>
+<script src="styles/lib/js/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga5bf1d2">1. Intro</a></li>
+<li><a href="#orged8b618">2. Python学习计划</a>
+<ul>
+<li><a href="#org021de72">2.1. 受众</a></li>
+<li><a href="#orgf84f8d7">2.2. 目标</a></li>
+<li><a href="#orgba9229f">2.3. 进度反馈及跟踪</a></li>
+</ul>
+</li>
+<li><a href="#org97d50ee">3. 第1周 Intro</a>
+<ul>
+<li><a href="#org6c06270">3.1. 本周目标</a></li>
+<li><a href="#org0a4766b">3.2. 请完成以下材料的阅读</a>
+<ul>
+<li><a href="#orgfacb8f1">3.2.1. 背景知识了解</a></li>
+<li><a href="#org328ad02">3.2.2. 编程环境设置</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgfecb1ef">4. 编程练习</a>
+<ul>
+<li><a href="#org69f8a11">4.1. 扩展阅读</a></li>
+</ul>
+</li>
+<li><a href="#org5e0619d">5. 第2周 开始Python学习</a>
+<ul>
+<li><a href="#orgb9cf96b">5.1. 本周目标</a></li>
+<li><a href="#orgd43a90e">5.2. Python Koan项目</a></li>
+<li><a href="#org3308d35">5.3. 阅读材料</a>
+<ul>
+<li><a href="#orga919551">5.3.1. 快速入门</a></li>
+<li><a href="#orgbe39e29">5.3.2. 请完成以下教程</a></li>
+</ul>
+</li>
+<li><a href="#orgcf7adcf">5.4. 编程练习 | 本周的Python Koan题目</a></li>
+</ul>
+</li>
+<li><a href="#orgf73e5e4">6. 第3周 继续Python Koan题目</a>
+<ul>
+<li><a href="#orgb144352">6.1. 本周目标</a></li>
+<li><a href="#org51c2403">6.2. 阅读材料</a>
+<ul>
+<li><a href="#org0af1934">6.2.1. 请完成以下教程</a></li>
+</ul>
+</li>
+<li><a href="#org79eab5e">6.3. 编程练习 | 本周的Python Koan题目</a></li>
+</ul>
+</li>
+<li><a href="#orgbb4f712">7. 第4周 decorator and context manager</a>
+<ul>
+<li><a href="#org2dcb878">7.1. 本周目标</a></li>
+<li><a href="#orgede095c">7.2. 阅读材料</a></li>
+<li><a href="#org89762a5">7.3. 编程练习 | 本周的Python Koan题目</a></li>
+<li><a href="#org1310e3f">7.4. 扩展阅读</a></li>
+<li><a href="#org5fe7d92">7.5. 参考书目</a></li>
+</ul>
+</li>
+<li><a href="#org5d7a0f1">8. 第5周 编程风格与命令行开发</a>
+<ul>
+<li><a href="#org05f81f3">8.1. 本周目标</a></li>
+<li><a href="#org4695bd4">8.2. 阅读材料</a>
+<ul>
+<li><a href="#org1d858c6">8.2.1. ipython</a></li>
+<li><a href="#orge84cb2e">8.2.2. pdb</a></li>
+<li><a href="#org3da700b">8.2.3. vim</a></li>
+</ul>
+</li>
+<li><a href="#org324c1d0">8.3. 编程练习</a></li>
+<li><a href="#org40aa092">8.4. 扩展阅读</a>
+<ul>
+<li><a href="#org17cbe29">8.4.1. windows开发环境</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org3833a1a">9. 第6周 标准库及其它</a>
+<ul>
+<li><a href="#orge2ad086">9.1. 本周目标</a></li>
+<li><a href="#orgf0cc333">9.2. 阅读材料</a>
+<ul>
+<li><a href="#org2fed6cd">9.2.1. 标准库</a></li>
+<li><a href="#org3713540">9.2.2. 常用库</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org21851fa">10. 第7周 开源工具</a>
+<ul>
+<li><a href="#orgc9d2fa5">10.1. 本周目标</a></li>
+<li><a href="#org38586fa">10.2. 阅读材料</a>
+<ul>
+<li><a href="#org0eb43e1">10.2.1. Markdown</a></li>
+<li><a href="#orge14818c">10.2.2. Git &amp;&amp; Gerrit</a></li>
+<li><a href="#org80a3a06">10.2.3. Jenkins &amp;&amp; CI</a></li>
+<li><a href="#org93c4449">10.2.4. tox</a></li>
+<li><a href="#orgb193356">10.2.5. 运维利器 Ansible</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgb2bffff">11. 第8周 实战</a>
+<ul>
+<li><a href="#org26d2c1f">11.1. 本周目标</a></li>
+<li><a href="#org03f7f6a">11.2. 编程练习</a>
+<ul>
+<li><a href="#orge28090b">11.2.1. 申请虚拟机作为开发机，要求CentOS7.2系统</a></li>
+<li><a href="#org3b1012b">11.2.2. 配置pip文件</a></li>
+<li><a href="#org45e6d7f">11.2.3. 安装并配置PostgreSQL数据库</a></li>
+<li><a href="#orgeb2af3d">11.2.4. 创建一个Python项目</a></li>
+<li><a href="#org78b2b8b">11.2.5. 编程</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga5bf1d2" class="outline-2">
+<h2 id="orga5bf1d2"><span class="section-number-2">1</span> Intro</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+本篇文档是由近期给公司校招的新人（没有Python背景）准备的培训资料整理而来，学习计
+划以学员的自学为主。根据实践平均每周学员需要花费1-2天的时间，每周再加上一个小时
+跟踪和讲解相关内容。
+</p>
+
+<p>
+教程并不是单纯的Python语言培训，侧重点在于让新人快速参与项目开发。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orged8b618" class="outline-2">
+<h2 id="orged8b618"><span class="section-number-2">2</span> Python学习计划</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-org021de72" class="outline-3">
+<h3 id="org021de72"><span class="section-number-3">2.1</span> 受众</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+假定学员熟悉基本的编程概念，使用过Java/C/C++其中一门语言，有一定项目开发经验
+</p>
+</div>
+</div>
+<div id="outline-container-orgf84f8d7" class="outline-3">
+<h3 id="orgf84f8d7"><span class="section-number-3">2.2</span> 目标</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+预计为期8周的阅读及学习计划，以完成每周设定的任务的方式引导学习Python语言以及
+相关开发知识，帮助学员进行Python项目开发
+</p>
+
+<p>
+需要完成的任务包括：
+</p>
+<ul class="org-ul">
+<li>完成参考资料的阅读（扩展阅读不作要求）</li>
+<li>完成一些具体的编程练习</li>
+<li>阅读一些库的文档并编写例子初步掌握使用</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgba9229f" class="outline-3">
+<h3 id="orgba9229f"><span class="section-number-3">2.3</span> 进度反馈及跟踪</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+每周会有例会跟踪进度，平时的反馈我们可以通过邮件交流
+</p>
+
+<p>
+randall.wjz@gmail.com
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org97d50ee" class="outline-2">
+<h2 id="org97d50ee"><span class="section-number-2">3</span> 第1周 Intro</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-org6c06270" class="outline-3">
+<h3 id="org6c06270"><span class="section-number-3">3.1</span> 本周目标</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+在开始学习Python语言的具体知识细节前了解一些背景知识，以及设置一个Python开发环境
+</p>
+</div>
+</div>
+<div id="outline-container-org0a4766b" class="outline-3">
+<h3 id="org0a4766b"><span class="section-number-3">3.2</span> 请完成以下材料的阅读</h3>
+<div class="outline-text-3" id="text-3-2">
+</div><div id="outline-container-orgfacb8f1" class="outline-4">
+<h4 id="orgfacb8f1"><span class="section-number-4">3.2.1</span> 背景知识了解</h4>
+<div class="outline-text-4" id="text-3-2-1">
+</div><ol class="org-ol"><li><a id="orgb184760"></a>简单的Python历史介绍<br /><div class="outline-text-5" id="text-3-2-1-1">
+<p>
+<a href="https://www.15yan.com/story/1JKTBQvVk5e/">人生苦短，我用Python</a>
+</p>
+</div></li>
+<li><a id="org960cad3"></a>Python语言的设计哲学<br /><div class="outline-text-5" id="text-3-2-1-2">
+<ul class="org-ul">
+<li><a href="https://www.python.org/dev/peps/pep-0020/">The Zen of Python</a></li>
+<li><a href="https://wiki.python.org/moin/PythonZenChineseTranslate">中文翻译参考</a></li>
+</ul>
+<pre class="example">
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than right now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+</pre>
+</div></li>
+<li><a id="orgb6155b6"></a>Python社区<br /><div class="outline-text-5" id="text-3-2-1-3">
+<ul class="org-ul">
+<li><a href="https://pythonguidecn.readthedocs.io/zh/latest/intro/community.html">社区</a></li>
+<li>PEP，中文翻译为Python增强提议。这个词经常在Python学习过程中看到，了解什么是PEP</li>
+<li>PSF，Python Software Foundation, Python软件基金会</li>
+<li>PyCon, 每年社区举办的Python开发者大会，youtube上可以找到与会演讲视频</li>
+</ul>
+</div></li>
+<li><a id="org3d40c73"></a>了解Python2和Python3的现状<br /><div class="outline-text-5" id="text-3-2-1-4">
+<ul class="org-ul">
+<li><a href="https://wiki.python.org/moin/Python2orPython3">Should I use Python 2 or Python 3 for my development activity?</a></li>
+<li>Python2版本将于2020年正式停止更新维护，Python语言的未来以及最新改进在Python3版本上进行</li>
+<li>新项目应该默认使用Python3进行开发</li>
+<li>现存的大量项目以及第三库使用Python2版本，流行的Python库大多兼容Python2/3版本</li>
+<li>目前公司的项目使用Python2版本</li>
+</ul>
+</div></li></ol>
+</div>
+<div id="outline-container-org328ad02" class="outline-4">
+<h4 id="org328ad02"><span class="section-number-4">3.2.2</span> 编程环境设置</h4>
+<div class="outline-text-4" id="text-3-2-2">
+</div><ol class="org-ol"><li><a id="orgc9f46a4"></a>选择Python解释器<br /><div class="outline-text-5" id="text-3-2-2-1">
+<p>
+<a href="https://python-guide-pt-br.readthedocs.io/en/latest/starting/which-python/">Picking an Interpreter</a>
+</p>
+</div></li>
+<li><a id="org47fa125"></a>安装Python<br /><div class="outline-text-5" id="text-3-2-2-2">
+<p>
+<a href="https://python-guide-pt-br.readthedocs.io/en/latest/starting/installation/">Properly Installing Python</a>
+</p>
+</div></li>
+<li><a id="org136de16"></a>了解pip<br /><div class="outline-text-5" id="text-3-2-2-3">
+<p>
+Python的包管理工具，类比Java语言的Maven工具
+</p>
+<ul class="org-ul">
+<li><a href="https://xin053.github.io/2016/07/02/pip%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/">pip包管理器使用详解</a></li>
+<li><a href="https://pip-cn.readthedocs.io/en/latest/quickstart.html">文档</a></li>
+</ul>
+</div></li>
+<li><a id="org1c392e1"></a>IDE &amp; Editor<br /><div class="outline-text-5" id="text-3-2-2-4">
+<p>
+项目组使用PyCharm进行Python开发，请下载安装并熟悉使用
+</p>
+<ul class="org-ul">
+<li><a href="http://www.jianshu.com/p/259fdc97bfe2">介绍</a></li>
+<li><a href="https://www.jetbrains.com/pycharm/">官网</a></li>
+</ul>
+
+<p>
+前端项目使用VS Code作为开发环境
+</p>
+<ul class="org-ul">
+<li><a href="https://jeasonstudio.gitbooks.io/vscode-cn-doc/content/md/%E7%BC%96%E8%BE%91%E5%99%A8/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E7%94%A8VSCode.html">Why Visual Studio Code? - 为什么选用VSCode</a></li>
+<li><a href="https://code.visualstudio.com/">官网</a></li>
+</ul>
+</div></li></ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfecb1ef" class="outline-2">
+<h2 id="orgfecb1ef"><span class="section-number-2">4</span> 编程练习</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>在本地安装设置好Python2.7开发环境</li>
+<li>使用pip安装requests库，<a href="http://docs.python-requests.org/en/master/user/install/">参考资料</a></li>
+<li>安装并设置好PyCharm</li>
+<li>使用PyCharm建立项目，编写程序使用requests使用GET请求访问 <a href="http://www.bing.com">http://www.bing.com</a> 并输出内容，<a href="http://docs.python-requests.org/en/master/user/quickstart/#make-a-request">参考资料</a></li>
+</ul>
+</div>
+
+<div id="outline-container-org69f8a11" class="outline-3">
+<h3 id="org69f8a11"><span class="section-number-3">4.1</span> 扩展阅读</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li><a href="http://py3readiness.org/">Python流行的第三方库支持Python3的情况</a></li>
+<li>前端项目使用<a href="https://standardjs.com/readme-zhcn.html">JavaScript Standard Style</a> 作为代码风格标准</li>
+<li><a href="https://pythonclock.org/">pythonclock</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5e0619d" class="outline-2">
+<h2 id="org5e0619d"><span class="section-number-2">5</span> 第2周 开始Python学习</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-orgb9cf96b" class="outline-3">
+<h3 id="orgb9cf96b"><span class="section-number-3">5.1</span> 本周目标</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+本周将进行为期三周的Python语言学习，每周将指定的一些练习题目，请尝试完成（来源于Python Koan项目）。
+</p>
+
+<p>
+阅读材料中将列出一些参考的Python学习教程，学员会有比较充足的时间进行自由的学习。
+</p>
+</div>
+</div>
+<div id="outline-container-orgd43a90e" class="outline-3">
+<h3 id="orgd43a90e"><span class="section-number-3">5.2</span> Python Koan项目</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+Python Koan是通过TDD进行Python学习的一个项目，<a href="https://github.com/gregmalcolm/python_koans">项目地址</a>
+请下载并按照文档设置，注意我们使用python2文件夹下的代码
+</p>
+
+<p>
+每个题目都关于Python语言的一个特性，完成题目可以帮助掌握这个特性。
+如遇到题目涉及到的教程中没有提及的概念，可以跳过。
+<a href="https://github.com/sourabhv/python-koans-solutions/tree/master/python3/koans">Python Koan 答案参考</a> （注意此答案使用Python3版本）
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3308d35" class="outline-3">
+<h3 id="org3308d35"><span class="section-number-3">5.3</span> 阅读材料</h3>
+<div class="outline-text-3" id="text-5-3">
+</div><div id="outline-container-orga919551" class="outline-4">
+<h4 id="orga919551"><span class="section-number-4">5.3.1</span> 快速入门</h4>
+<div class="outline-text-4" id="text-5-3-1">
+<ul class="org-ul">
+<li><a href="https://stephensugden.com/crash_into_python/">写给有经验程序员的Python入门教程</a> 快速了解Python特性</li>
+<li><a href="https://dzone.com/refcardz/core-python">Python 核心特性</a> Section 1-11</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbe39e29" class="outline-4">
+<h4 id="orgbe39e29"><span class="section-number-4">5.3.2</span> 请完成以下教程</h4>
+<div class="outline-text-4" id="text-5-3-2">
+<ul class="org-ul">
+<li><a href="https://pymbook.readthedocs.io/en/py2/">Welcome to Python for you and me</a>  （比较简洁，PEP8 Guidelines，Virtualenv及之后章节可跳过)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcf7adcf" class="outline-3">
+<h3 id="orgcf7adcf"><span class="section-number-3">5.4</span> 编程练习 | 本周的Python Koan题目</h3>
+<div class="outline-text-3" id="text-5-4">
+<ul class="org-ul">
+<li>about_asserts.py</li>
+<li>about_strings.py</li>
+<li>about_none.py</li>
+<li>about_lists.py</li>
+<li>about_list_assignments.py</li>
+<li>about_dictionaries.py</li>
+<li>about_string_manipulation.py</li>
+<li>about_tuples.py</li>
+<li>about_methods.py</li>
+<li>about_control_statements.py</li>
+<li>about_true_and_false.py</li>
+<li>about_sets.py</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf73e5e4" class="outline-2">
+<h2 id="orgf73e5e4"><span class="section-number-2">6</span> 第3周 继续Python Koan题目</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-orgb144352" class="outline-3">
+<h3 id="orgb144352"><span class="section-number-3">6.1</span> 本周目标</h3>
+</div>
+<div id="outline-container-org51c2403" class="outline-3">
+<h3 id="org51c2403"><span class="section-number-3">6.2</span> 阅读材料</h3>
+<div class="outline-text-3" id="text-6-2">
+</div><div id="outline-container-org0af1934" class="outline-4">
+<h4 id="org0af1934"><span class="section-number-4">6.2.1</span> 请完成以下教程</h4>
+<div class="outline-text-4" id="text-6-2-1">
+<ul class="org-ul">
+<li><a href="https://docs.python.org/2.7/tutorial/index.html">Python官方入门教程</a> (阅读2-9章节即可)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org79eab5e" class="outline-3">
+<h3 id="org79eab5e"><span class="section-number-3">6.3</span> 编程练习 | 本周的Python Koan题目</h3>
+<div class="outline-text-3" id="text-6-3">
+<ul class="org-ul">
+<li>about_triangle_project.py</li>
+<li>about_exceptions.py</li>
+<li>about_triangle_project2.py</li>
+<li>about_iteration.py</li>
+<li>about_comprehension.py</li>
+<li>about_generators.py</li>
+<li>about_lambdas.py</li>
+<li>about_scoring_project.py</li>
+<li>about_classes.py</li>
+<li>about_new_style_classes.py</li>
+<li>about_with_statements.py</li>
+<li>about_monkey_patching.py</li>
+<li>about_dice_project.py</li>
+<li>about_method_bindings.py</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbb4f712" class="outline-2">
+<h2 id="orgbb4f712"><span class="section-number-2">7</span> 第4周 decorator and context manager</h2>
+<div class="outline-text-2" id="text-7">
+</div><div id="outline-container-org2dcb878" class="outline-3">
+<h3 id="org2dcb878"><span class="section-number-3">7.1</span> 本周目标</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+相信大家对编程语言中的基于数据和基于函数的抽象都不陌生，现在来看一下Python对于基于语法的抽象的支持。
+</p>
+<ul class="org-ul">
+<li>了解Python中装饰器(decorator)的概念</li>
+<li>了解Python中上下文管理器(context manager)的概念</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgede095c" class="outline-3">
+<h3 id="orgede095c"><span class="section-number-3">7.2</span> 阅读材料</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li><a href="https://www.cnblogs.com/vamei/archive/2013/02/16/2820212.html">装饰器</a> 简短介绍</li>
+<li><a href="https://www.thecodeship.com/patterns/guide-to-python-function-decorators/">A guide to Python's function decorators</a></li>
+<li><a href="https://www.cnblogs.com/vamei/archive/2012/11/23/2772445.html">上下文管理器</a> 简短介绍</li>
+<li><a href="http://arnavk.com/posts/python-context-managers/">Python in the real world: Context Managers</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org89762a5" class="outline-3">
+<h3 id="org89762a5"><span class="section-number-3">7.3</span> 编程练习 | 本周的Python Koan题目</h3>
+<div class="outline-text-3" id="text-7-3">
+<ul class="org-ul">
+<li>about_decorating_with_functions.py</li>
+<li>about_decorating_with_classes.py</li>
+<li>about_inheritance.py</li>
+<li>about_multiple_inheritance.py</li>
+<li>about_scope.py</li>
+<li>about_modules.py</li>
+<li>about_packages.py</li>
+<li>about_class_attributes.py</li>
+<li>about_attribute_access.py</li>
+<li>about_deleting_objects.py</li>
+<li>about_proxy_object_project.py</li>
+<li>about_proxy_object_project.py</li>
+<li>about_extra_credit.py</li>
+<li>about_regex.py</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1310e3f" class="outline-3">
+<h3 id="org1310e3f"><span class="section-number-3">7.4</span> 扩展阅读</h3>
+<div class="outline-text-3" id="text-7-4">
+<ul class="org-ul">
+<li><a href="https://pymotw.com/2/contextlib/">标准库中的context manager工具</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5fe7d92" class="outline-3">
+<h3 id="org5fe7d92"><span class="section-number-3">7.5</span> 参考书目</h3>
+<div class="outline-text-3" id="text-7-5">
+<p>
+学习了两个教程之后对Python语言已经有大致的了解，接下来如果需要深入学习，建议找一些严肃的书籍进行系统性的学习。
+</p>
+<ul class="org-ul">
+<li><a href="http://fwww.pythonbooks.org">python books</a></li>
+<li><a href="https://pythonguidecn.readthedocs.io/zh/latest/intro/learning.html">学习Python</a>资源</li>
+<li><a href="https://www.fullstackpython.com/best-python-resources.html">Best Python Resources</a> Full Stack Python 本身也是很好的学习资源</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5d7a0f1" class="outline-2">
+<h2 id="org5d7a0f1"><span class="section-number-2">8</span> 第5周 编程风格与命令行开发</h2>
+<div class="outline-text-2" id="text-8">
+</div><div id="outline-container-org05f81f3" class="outline-3">
+<h3 id="org05f81f3"><span class="section-number-3">8.1</span> 本周目标</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+了解Python编程风格及命令行开发工具.
+</p>
+
+<p>
+Python code style 业界现在有两个标准，PEP8 以及 <a href="https://google.github.io/styleguide/pyguide.html">Google Python Style Guide</a>
+项目组采用PEP8标准，对于Google Style可以稍作了解
+</p>
+
+<p>
+除了日常在IDE里进行Python开发，开发人员也应该掌握一些在命令行环境下进行编程和debug的技能
+</p>
+</div>
+</div>
+<div id="outline-container-org4695bd4" class="outline-3">
+<h3 id="org4695bd4"><span class="section-number-3">8.2</span> 阅读材料</h3>
+<div class="outline-text-3" id="text-8-2">
+<ul class="org-ul">
+<li><a href="https://pythonguidecn.readthedocs.io/zh/latest/writing/style.html">代码风格</a> <a href="http://docs.python-guide.org/en/latest/writing/style/">英文版</a></li>
+<li><a href="https://pythonguidecn.readthedocs.io/zh/latest/dev/virtualenvs.html">虚拟环境</a> virtualenv</li>
+<li><a href="https://pythonguidecn.readthedocs.io/zh/latest/dev/pip-virtualenv.html">Pip和Virtualenv的更多配置</a></li>
+<li><a href="http://pep8.org/">PEP8</a> 建议阅读这个美化过的排版，<a href="https://www.python.org/dev/peps/pep-0008/">原版</a>地址</li>
+<li><a href="https://github.com/google/yapf">yapf</a> Google 出品的自动化格式代码工具，建议了解一下</li>
+</ul>
+</div>
+<div id="outline-container-org1d858c6" class="outline-4">
+<h4 id="org1d858c6"><span class="section-number-4">8.2.1</span> ipython</h4>
+<div class="outline-text-4" id="text-8-2-1">
+<ul class="org-ul">
+<li><a href="https://ipython.org/">官网</a></li>
+<li><p>
+作为一个交互式shell, 用来代替默认的python命令行编程环境
+</p>
+<div class="org-src-container">
+<pre class="src src-shell"><span style="color: #b2b2b2; font-style: italic;"># </span><span style="color: #b2b2b2; font-style: italic;">&#20351;&#29992;&#20197;&#19979;&#21629;&#20196;&#23433;&#35013;python2.7&#29256;&#26412;&#30340;ipython</span>
+pip install <span style="color: #ff1f8b;">'ipython&lt;=6.0.0'</span>
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge84cb2e" class="outline-4">
+<h4 id="orge84cb2e"><span class="section-number-4">8.2.2</span> pdb</h4>
+<div class="outline-text-4" id="text-8-2-2">
+<p>
+Python debuger, 交互式debug环境。类似于GDB
+</p>
+<ul class="org-ul">
+<li><a href="https://pymotw.com/2/pdb/index.html">使用教程</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3da700b" class="outline-4">
+<h4 id="org3da700b"><span class="section-number-4">8.2.3</span> vim</h4>
+<div class="outline-text-4" id="text-8-2-3">
+<p>
+命令行环境下的编辑器
+</p>
+<ul class="org-ul">
+<li><a href="http://www.openvim.com/">交互式的VIM简短教程</a> 十分炫酷的简短教程，掌握日常用到的最基本操作</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org324c1d0" class="outline-3">
+<h3 id="org324c1d0"><span class="section-number-3">8.3</span> 编程练习</h3>
+<div class="outline-text-3" id="text-8-3">
+<p>
+本周没有具体的编程练习，请花一点时间熟悉一下pip/virtualenv/ipython/pdb/vim工具。
+</p>
+
+<p>
+编辑器/IDE是非常重要的工具，在工作过程中几乎所有的开发时间都花这上面，所以不
+论你喜欢vim/emacs/vs code/atom/sublime text，你应该熟悉你的编程器/IDE。花些时间去了解
+你喜欢的编程器/IDE
+</p>
+
+<p>
+适当设置好开发环境对于提高开发效率也相当重要，有兴趣可以了解一下扩展阅读里列出的工具
+</p>
+</div>
+</div>
+
+<div id="outline-container-org40aa092" class="outline-3">
+<h3 id="org40aa092"><span class="section-number-3">8.4</span> 扩展阅读</h3>
+<div class="outline-text-3" id="text-8-4">
+<ul class="org-ul">
+<li><a href="https://pythonguidecn.readthedocs.io/zh/latest/dev/env.html">你的开发环境</a> <a href="http://docs.python-guide.org/en/latest/dev/env/">英文版</a></li>
+<li><a href="https://aaaaaashu.gitbooks.io/mac-dev-setup/content/index.html">Mac 开发配置手册</a></li>
+</ul>
+</div>
+<div id="outline-container-org17cbe29" class="outline-4">
+<h4 id="org17cbe29"><span class="section-number-4">8.4.1</span> windows开发环境</h4>
+<div class="outline-text-4" id="text-8-4-1">
+<p>
+个人推荐 Cygwin + ConEmu + zsh + oh-my-shell + CoreUtils
+</p>
+<ul class="org-ul">
+<li><a href="https://cygwin.com/install.html">Cygwin</a></li>
+<li><a href="https://conemu.github.io/">ConEmu</a></li>
+<li><a href="http://www.jeffjade.com/2015/07/29/2015-07-29-mac-musthave-software/">终极Shell</a> 在Cygwin环境中也可以使用zsh + oh-my-zsh</li>
+<li><a href="http://gnuwin32.sourceforge.net/packages/coreutils.htm">CoreUtils for Windows</a> 常用的liunx命令windows移植</li>
+<li><a href="http://www.jianshu.com/p/aa19380828bd">配置豪华的 Windows 开发环境</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3833a1a" class="outline-2">
+<h2 id="org3833a1a"><span class="section-number-2">9</span> 第6周 标准库及其它</h2>
+<div class="outline-text-2" id="text-9">
+</div><div id="outline-container-orge2ad086" class="outline-3">
+<h3 id="orge2ad086"><span class="section-number-3">9.1</span> 本周目标</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+大概了解下Python标准库, 一些第三库/框架
+</p>
+</div>
+</div>
+<div id="outline-container-orgf0cc333" class="outline-3">
+<h3 id="orgf0cc333"><span class="section-number-3">9.2</span> 阅读材料</h3>
+<div class="outline-text-3" id="text-9-2">
+</div><div id="outline-container-org2fed6cd" class="outline-4">
+<h4 id="org2fed6cd"><span class="section-number-4">9.2.1</span> 标准库</h4>
+<div class="outline-text-4" id="text-9-2-1">
+<ul class="org-ul">
+<li><a href="https://www.cnblogs.com/vamei/archive/2012/07/18/2597212.html">Python标准库——走马观花</a></li>
+<li><a href="https://www.cnblogs.com/vamei/archive/2012/08/31/2661870.html">Python标准库01 正则表达式 (re包)</a></li>
+<li><a href="https://www.cnblogs.com/vamei/archive/2012/09/05/2671198.html">Python标准库03 路径与文件 (os.path包, glob包)</a></li>
+<li><a href="https://www.cnblogs.com/vamei/archive/2012/09/14/2684775.html">Python标准库04 文件管理 (部分os包，shutil包)</a></li>
+<li><a href="https://www.cnblogs.com/vamei/archive/2012/09/23/2698014.html">Python标准库06 子进程 (subprocess包)</a></li>
+<li><a href="https://www.cnblogs.com/vamei/archive/2012/10/11/2720042.html">Python标准库08 多线程与同步 (threading包)</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3713540" class="outline-4">
+<h4 id="org3713540"><span class="section-number-4">9.2.2</span> 常用库</h4>
+<div class="outline-text-4" id="text-9-2-2">
+</div><ol class="org-ol"><li><a id="orga96da64"></a>Oslo<br /><div class="outline-text-5" id="text-9-2-2-1">
+<p>
+Oslo 是由openstack项目衍生出来的一系列python库，为openstack众多项目提供统一的公共功能。
+</p>
+<blockquote>
+<p>
+To produce a set of python libraries containing code shared by OpenStack
+projects. The APIs provided by these libraries should be high quality,
+stable, consistent, documented and generally applicable
+</p>
+</blockquote>
+<ul class="org-ul">
+<li><a href="https://wiki.openstack.org/wiki/Oslo">官方Wiki Oslo库列表</a></li>
+</ul>
+
+<p>
+阅读使用和配置文档，大概了解这些包是用做什么的即可。
+</p>
+<ul class="org-ul">
+<li>oslo.cache</li>
+<li>oslo.concurrency</li>
+<li>oslo.config</li>
+<li>oslo.log</li>
+<li>oslo.policy</li>
+<li>pbr</li>
+</ul>
+</div></li>
+<li><a id="org5272cce"></a>SQLAlchemy<br /><div class="outline-text-5" id="text-9-2-2-2">
+<p>
+SQLAlchemy 是一个连接数据库的ORM框架
+大概了解 SQLAlchemy 的简单使用方式，不要求深入了解
+</p>
+<ul class="org-ul">
+<li><a href="https://www.sqlalchemy.org/">官网</a></li>
+<li><a href="http://www.jianshu.com/p/e6bba189fcbd">简单介绍</a></li>
+<li><a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0014021031294178f993c85204e4d1b81ab032070641ce5000">简单使用教程</a></li>
+</ul>
+</div></li></ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org21851fa" class="outline-2">
+<h2 id="org21851fa"><span class="section-number-2">10</span> 第7周 开源工具</h2>
+<div class="outline-text-2" id="text-10">
+</div><div id="outline-container-orgc9d2fa5" class="outline-3">
+<h3 id="orgc9d2fa5"><span class="section-number-3">10.1</span> 本周目标</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+了解一些开源工具及项目开发协作相关工具
+</p>
+
+<p>
+由于列出的工具较多，不要求深入了解
+</p>
+</div>
+</div>
+<div id="outline-container-org38586fa" class="outline-3">
+<h3 id="org38586fa"><span class="section-number-3">10.2</span> 阅读材料</h3>
+<div class="outline-text-3" id="text-10-2">
+</div><div id="outline-container-org0eb43e1" class="outline-4">
+<h4 id="org0eb43e1"><span class="section-number-4">10.2.1</span> Markdown</h4>
+<div class="outline-text-4" id="text-10-2-1">
+<p>
+<a href="https://www.fullstackpython.com/markdown.html">Markdown语法</a> 平时写文档时可以使用Markdown语法
+</p>
+
+<p>
+示例网站 <a href="https://maxiang.io/">https://maxiang.io/</a>
+可以看到左边为文本内容，右边为渲染后的效果。使用markdown语法，书写文档时不需
+要关心排版效果，可以专注于内容本身。
+</p>
+</div>
+</div>
+<div id="outline-container-orge14818c" class="outline-4">
+<h4 id="orge14818c"><span class="section-number-4">10.2.2</span> Git &amp;&amp; Gerrit</h4>
+<div class="outline-text-4" id="text-10-2-2">
+<p>
+项目组使用Git进行代码版本管理，使用Git是一项必备技能。如果以前没有使用Git的
+经验，请务必花一些时间学习。
+</p>
+<ul class="org-ul">
+<li><a href="https://github.com/larrycai/sdcamp/blob/master/contents/1-chapter2-git-gerrit.markdown">版本控制Git和代码审阅Gerrit</a></li>
+<li><a href="https://lvwzhen.gitbooks.io/git-tutorial/content/">Git教程</a></li>
+<li><a href="https://gerrit-review.googlesource.com/Documentation/intro-quick.html">Gerrit Code Review - A Quick Introduction</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org80a3a06" class="outline-4">
+<h4 id="org80a3a06"><span class="section-number-4">10.2.3</span> Jenkins &amp;&amp; CI</h4>
+<div class="outline-text-4" id="text-10-2-3">
+<ul class="org-ul">
+<li><a href="https://gwpost.gitbooks.io/jenkins-the-definitive-guide/content/Introducting%20Jenkins/jie_shao.html">Jenkins与持续集成(CI)介绍</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org93c4449" class="outline-4">
+<h4 id="org93c4449"><span class="section-number-4">10.2.4</span> tox</h4>
+<div class="outline-text-4" id="text-10-2-4">
+<ul class="org-ul">
+<li><a href="http://wsfdl.com/python/2015/02/01/Python%E7%9A%84%E6%B5%8B%E8%AF%95%E4%B9%8BTox.html">Python 的单元测试之 tox</a></li>
+<li><a href="https://tox.readthedocs.io/en/latest/">tox官网介绍</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb193356" class="outline-4">
+<h4 id="orgb193356"><span class="section-number-4">10.2.5</span> 运维利器 Ansible</h4>
+<div class="outline-text-4" id="text-10-2-5">
+<p>
+自动化运维工具，可以稍作了解，日常工作中可能会用到ansible工具来批量运行脚本
+</p>
+<ul class="org-ul">
+<li><a href="http://www.stay-stupid.com/?p=366">Ansible 简介</a> 阅读简介至ad-hoc部分即可</li>
+<li><a href="https://ansible-tran.readthedocs.io/en/latest/index.html">Ansible中文权威指南</a>  如果有兴趣深入了解</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb2bffff" class="outline-2">
+<h2 id="orgb2bffff"><span class="section-number-2">11</span> 第8周 实战</h2>
+<div class="outline-text-2" id="text-11">
+</div><div id="outline-container-org26d2c1f" class="outline-3">
+<h3 id="org26d2c1f"><span class="section-number-3">11.1</span> 本周目标</h3>
+<div class="outline-text-3" id="text-11-1">
+<p>
+本周为编程练习，创建一个Python项目，并编程完成要求
+</p>
+
+<p>
+这个项目是完成一个命令行工具，可以通过命令行调用来完成数据库表的CUDR操作
+</p>
+</div>
+</div>
+<div id="outline-container-org03f7f6a" class="outline-3">
+<h3 id="org03f7f6a"><span class="section-number-3">11.2</span> 编程练习</h3>
+<div class="outline-text-3" id="text-11-2">
+</div><div id="outline-container-orge28090b" class="outline-4">
+<h4 id="orge28090b"><span class="section-number-4">11.2.1</span> 申请虚拟机作为开发机，要求CentOS7.2系统</h4>
+</div>
+<div id="outline-container-org3b1012b" class="outline-4">
+<h4 id="org3b1012b"><span class="section-number-4">11.2.2</span> 配置pip文件</h4>
+</div>
+<div id="outline-container-org45e6d7f" class="outline-4">
+<h4 id="org45e6d7f"><span class="section-number-4">11.2.3</span> 安装并配置PostgreSQL数据库</h4>
+<div class="outline-text-4" id="text-11-2-3">
+<p>
+tips: 可以使用 NaviCat pgAdmin 等数据库管理工具
+</p>
+
+<p>
+配置数据库密码为 test123456
+</p>
+
+<p>
+创建database, 名称: cudr
+</p>
+
+<p>
+在 cudr 新建表，表名example
+</p>
+
+<p>
+创建 sql 如下
+</p>
+<div class="org-src-container">
+<pre class="src src-sql"><span style="color: #00af00;">DROP</span> <span style="color: #00af00;">TABLE</span> <span style="color: #ef2929;">IF</span> <span style="color: #00af00;">EXISTS</span> "<span style="color: #00af00;">public</span>"."example";
+<span style="color: #00af00;">CREATE</span> <span style="color: #00af00;">TABLE</span> "<span style="color: #00af00;">public</span>"."example" <span style="color: #cc0000; font-weight: bold;">(</span>
+"<span style="color: #00af00;">name</span>" <span style="color: #18b2b2;">varchar</span><span style="color: #1f5bff; font-weight: bold;">(</span><span style="color: #1f5bff;">127</span><span style="color: #1f5bff; font-weight: bold;">)</span> <span style="color: #00af00;">COLLATE</span> "<span style="color: #00af00;">default</span>" <span style="color: #00af00;">NOT</span> <span style="color: #00af00;">NULL</span>,
+"code" <span style="color: #18b2b2;">varchar</span><span style="color: #1f5bff; font-weight: bold;">(</span><span style="color: #1f5bff;">63</span><span style="color: #1f5bff; font-weight: bold;">)</span> <span style="color: #00af00;">COLLATE</span> "<span style="color: #00af00;">default</span>" <span style="color: #00af00;">NOT</span> <span style="color: #00af00;">NULL</span>
+<span style="color: #cc0000; font-weight: bold;">)</span>
+<span style="color: #00af00;">WITH</span> <span style="color: #cc0000; font-weight: bold;">(</span>OIDS=<span style="color: #00af00;">FALSE</span><span style="color: #cc0000; font-weight: bold;">)</span>
+;
+<span style="color: #00af00;">ALTER</span> <span style="color: #00af00;">TABLE</span> "<span style="color: #00af00;">public</span>"."example" <span style="color: #00af00;">ADD</span> <span style="color: #00af00;">PRIMARY</span> <span style="color: #00af00;">KEY</span> <span style="color: #cc0000; font-weight: bold;">(</span>"<span style="color: #00af00;">name</span>"<span style="color: #cc0000; font-weight: bold;">)</span>;
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeb2af3d" class="outline-4">
+<h4 id="orgeb2af3d"><span class="section-number-4">11.2.4</span> 创建一个Python项目</h4>
+<div class="outline-text-4" id="text-11-2-4">
+<p>
+项目名称 cudr
+</p>
+
+<p>
+项目结构请阅读<a href="https://pythonguidecn.readthedocs.io/zh/latest/writing/structure.html">结构化你的工程</a> 中仓库的结构一节，关于 Django Applications及之后的章节可跳过
+</p>
+
+<p>
+在 requirements.txt 文件中指定项目依赖库
+</p>
+<pre class="example">
+sqlalchemy
+click
+</pre>
+
+<p>
+使用pip安装依赖
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">pip install -r requirements.txt
+</pre>
+</div>
+</div>
+<ol class="org-ol"><li><a id="orgb6287ea"></a>click 用于创建命令行工具<br /><div class="outline-text-5" id="text-11-2-4-1">
+<ul class="org-ul">
+<li><a href="http://click.pocoo.org/5/">官网</a></li>
+<li><a href="http://www.jianshu.com/p/d2b61a892c32">简单使用教程</a></li>
+</ul>
+</div></li>
+<li><a id="orge9e1c6b"></a>sqlalchemy 数据库ORM工具<br /></li></ol>
+</div>
+<div id="outline-container-org78b2b8b" class="outline-4">
+<h4 id="org78b2b8b"><span class="section-number-4">11.2.5</span> 编程</h4>
+<div class="outline-text-4" id="text-11-2-5">
+<p>
+在 cudr/core.py 中完成具体的代码工作
+</p>
+
+<p>
+具体代码实现以及命令行使用参数的设计可以自由发挥
+</p>
+
+<p>
+最终效果要求可以完成类似以下功能(不要求和下面示例代码中一样)
+</p>
+<ul class="org-ul">
+<li>创建</li>
+<li>读取</li>
+<li>修改</li>
+<li>删除</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-shell"><span style="color: #b2b2b2; font-style: italic;"># </span><span style="color: #b2b2b2; font-style: italic;">&#21019;&#24314;&#19968;&#20010;&#25968;&#25454;&#24211;&#35760;&#24405;</span>
+python core.py --create name1 code1
+<span style="color: #b2b2b2; font-style: italic;"># </span><span style="color: #b2b2b2; font-style: italic;">&#35835;&#21462;</span>
+python core.py --read name1
+<span style="color: #b2b2b2; font-style: italic;"># </span><span style="color: #b2b2b2; font-style: italic;">&#20462;&#25913; &#25351;&#23450;&#20027;&#38190;name1&#21450;&#26356;&#26032;&#30340;&#23383;&#27573;&#21450;&#23383;&#27573;&#30340;&#26032;&#20540;</span>
+python core.py --update name1 <span style="color: #ff8700;">name</span>=name2
+<span style="color: #b2b2b2; font-style: italic;"># </span><span style="color: #b2b2b2; font-style: italic;">&#21024;&#38500;</span>
+python core.py --delete name2
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Rnadll Wang</p>
+<p class="date">Created: 2017-09-02 Sat 00:22</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

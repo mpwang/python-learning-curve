@@ -1,0 +1,371 @@
+#+SETUPFILE: setup/theme-readtheorg-local.setup
+#+STARTUP: showall
+
+* Intro
+
+本篇文档是由近期给公司校招的新人（没有Python背景）准备的培训资料整理而来，学习计
+划以学员的自学为主。根据实践平均每周学员需要花费1-2天的时间，每周再加上一个小时
+跟踪和讲解相关内容。
+
+教程并不是单纯的Python语言培训，侧重点在于让新人快速参与项目开发。
+
+* Python学习计划
+** 受众
+   假定学员熟悉基本的编程概念，使用过Java/C/C++其中一门语言，有一定项目开发经验
+** 目标
+   预计为期8周的阅读及学习计划，以完成每周设定的任务的方式引导学习Python语言以及
+   相关开发知识，帮助学员进行Python项目开发
+
+   需要完成的任务包括：
+   - 完成参考资料的阅读（扩展阅读不作要求）
+   - 完成一些具体的编程练习
+   - 阅读一些库的文档并编写例子初步掌握使用
+** 进度反馈及跟踪
+   每周会有例会跟踪进度，平时的反馈我们可以通过邮件交流
+
+   randall.wjz@gmail.com
+
+* 第1周 Intro
+** 本周目标
+   在开始学习Python语言的具体知识细节前了解一些背景知识，以及设置一个Python开发环境
+** 请完成以下材料的阅读
+*** 背景知识了解
+**** 简单的Python历史介绍
+     [[https://www.15yan.com/story/1JKTBQvVk5e/][人生苦短，我用Python]]
+**** Python语言的设计哲学
+     - [[https://www.python.org/dev/peps/pep-0020/][The Zen of Python]]
+     - [[https://wiki.python.org/moin/PythonZenChineseTranslate][中文翻译参考]]
+     #+BEGIN_EXAMPLE
+     The Zen of Python, by Tim Peters
+
+     Beautiful is better than ugly.
+     Explicit is better than implicit.
+     Simple is better than complex.
+     Complex is better than complicated.
+     Flat is better than nested.
+     Sparse is better than dense.
+     Readability counts.
+     Special cases aren't special enough to break the rules.
+     Although practicality beats purity.
+     Errors should never pass silently.
+     Unless explicitly silenced.
+     In the face of ambiguity, refuse the temptation to guess.
+     There should be one-- and preferably only one --obvious way to do it.
+     Although that way may not be obvious at first unless you're Dutch.
+     Now is better than never.
+     Although never is often better than right now.
+     If the implementation is hard to explain, it's a bad idea.
+     If the implementation is easy to explain, it may be a good idea.
+     Namespaces are one honking great idea -- let's do more of those!
+     #+END_EXAMPLE
+**** Python社区
+     - [[https://pythonguidecn.readthedocs.io/zh/latest/intro/community.html][社区]]
+     - PEP，中文翻译为Python增强提议。这个词经常在Python学习过程中看到，了解什么是PEP
+     - PSF，Python Software Foundation, Python软件基金会
+     - PyCon, 每年社区举办的Python开发者大会，youtube上可以找到与会演讲视频
+**** 了解Python2和Python3的现状
+     - [[https://wiki.python.org/moin/Python2orPython3][Should I use Python 2 or Python 3 for my development activity?]]
+     - Python2版本将于2020年正式停止更新维护，Python语言的未来以及最新改进在Python3版本上进行
+     - 新项目应该默认使用Python3进行开发
+     - 现存的大量项目以及第三库使用Python2版本，流行的Python库大多兼容Python2/3版本
+     - 目前公司的项目使用Python2版本
+*** 编程环境设置
+**** 选择Python解释器
+     [[https://python-guide-pt-br.readthedocs.io/en/latest/starting/which-python/][Picking an Interpreter]]
+**** 安装Python
+     [[https://python-guide-pt-br.readthedocs.io/en/latest/starting/installation/][Properly Installing Python]]
+**** 了解pip
+     Python的包管理工具，类比Java语言的Maven工具
+     - [[https://xin053.github.io/2016/07/02/pip%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/][pip包管理器使用详解]]
+     - [[https://pip-cn.readthedocs.io/en/latest/quickstart.html][文档]]
+**** IDE & Editor
+     项目组使用PyCharm进行Python开发，请下载安装并熟悉使用
+     - [[http://www.jianshu.com/p/259fdc97bfe2][介绍]]
+     - [[https://www.jetbrains.com/pycharm/][官网]]
+
+     前端项目使用VS Code作为开发环境
+     - [[https://jeasonstudio.gitbooks.io/vscode-cn-doc/content/md/%E7%BC%96%E8%BE%91%E5%99%A8/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E7%94%A8VSCode.html][Why Visual Studio Code? - 为什么选用VSCode]]
+     - [[https://code.visualstudio.com/][官网]]
+
+* 编程练习
+  - 在本地安装设置好Python2.7开发环境
+  - 使用pip安装requests库，[[http://docs.python-requests.org/en/master/user/install/][参考资料]]
+  - 安装并设置好PyCharm
+  - 使用PyCharm建立项目，编写程序使用requests使用GET请求访问 http://www.bing.com 并输出内容，[[http://docs.python-requests.org/en/master/user/quickstart/#make-a-request][参考资料]]
+
+** 扩展阅读
+   - [[http://py3readiness.org/][Python流行的第三方库支持Python3的情况]]
+   - 前端项目使用[[https://standardjs.com/readme-zhcn.html][JavaScript Standard Style]] 作为代码风格标准
+   - [[https://pythonclock.org/][pythonclock]]
+
+* 第2周 开始Python学习
+** 本周目标
+   本周将进行为期三周的Python语言学习，每周将指定的一些练习题目，请尝试完成（来源于Python Koan项目）。
+
+   阅读材料中将列出一些参考的Python学习教程，学员会有比较充足的时间进行自由的学习。
+** Python Koan项目
+   Python Koan是通过TDD进行Python学习的一个项目，[[https://github.com/gregmalcolm/python_koans][项目地址]]
+   请下载并按照文档设置，注意我们使用python2文件夹下的代码
+
+   每个题目都关于Python语言的一个特性，完成题目可以帮助掌握这个特性。
+   如遇到题目涉及到的教程中没有提及的概念，可以跳过。
+   [[https://github.com/sourabhv/python-koans-solutions/tree/master/python3/koans][Python Koan 答案参考]] （注意此答案使用Python3版本）
+
+** 阅读材料
+*** 快速入门
+   - [[https://stephensugden.com/crash_into_python/][写给有经验程序员的Python入门教程]] 快速了解Python特性
+   - [[https://dzone.com/refcardz/core-python][Python 核心特性]] Section 1-11
+*** 请完成以下教程
+   - [[https://pymbook.readthedocs.io/en/py2/][Welcome to Python for you and me]]  （比较简洁，PEP8 Guidelines，Virtualenv及之后章节可跳过)
+
+** 编程练习 | 本周的Python Koan题目
+   - about_asserts.py
+   - about_strings.py
+   - about_none.py
+   - about_lists.py
+   - about_list_assignments.py
+   - about_dictionaries.py
+   - about_string_manipulation.py
+   - about_tuples.py
+   - about_methods.py
+   - about_control_statements.py
+   - about_true_and_false.py
+   - about_sets.py
+
+* 第3周 继续Python Koan题目
+** 本周目标
+** 阅读材料
+*** 请完成以下教程
+   - [[https://docs.python.org/2.7/tutorial/index.html][Python官方入门教程]] (阅读2-9章节即可)
+
+** 编程练习 | 本周的Python Koan题目
+   - about_triangle_project.py
+   - about_exceptions.py
+   - about_triangle_project2.py
+   - about_iteration.py
+   - about_comprehension.py
+   - about_generators.py
+   - about_lambdas.py
+   - about_scoring_project.py
+   - about_classes.py
+   - about_new_style_classes.py
+   - about_with_statements.py
+   - about_monkey_patching.py
+   - about_dice_project.py
+   - about_method_bindings.py
+
+* 第4周 decorator and context manager
+** 本周目标
+   相信大家对编程语言中的基于数据和基于函数的抽象都不陌生，现在来看一下Python对于基于语法的抽象的支持。
+   - 了解Python中装饰器(decorator)的概念
+   - 了解Python中上下文管理器(context manager)的概念
+
+** 阅读材料
+   - [[https://www.cnblogs.com/vamei/archive/2013/02/16/2820212.html][装饰器]] 简短介绍
+   - [[https://www.thecodeship.com/patterns/guide-to-python-function-decorators/][A guide to Python's function decorators]]
+   - [[https://www.cnblogs.com/vamei/archive/2012/11/23/2772445.html][上下文管理器]] 简短介绍
+   - [[http://arnavk.com/posts/python-context-managers/][Python in the real world: Context Managers]]
+
+** 编程练习 | 本周的Python Koan题目
+   - about_decorating_with_functions.py
+   - about_decorating_with_classes.py
+   - about_inheritance.py
+   - about_multiple_inheritance.py
+   - about_scope.py
+   - about_modules.py
+   - about_packages.py
+   - about_class_attributes.py
+   - about_attribute_access.py
+   - about_deleting_objects.py
+   - about_proxy_object_project.py
+   - about_proxy_object_project.py
+   - about_extra_credit.py
+   - about_regex.py
+
+** 扩展阅读
+   - [[https://pymotw.com/2/contextlib/][标准库中的context manager工具]]
+
+** 参考书目
+   学习了两个教程之后对Python语言已经有大致的了解，接下来如果需要深入学习，建议找一些严肃的书籍进行系统性的学习。
+   - [[http://fwww.pythonbooks.org][python books]]
+   - [[https://pythonguidecn.readthedocs.io/zh/latest/intro/learning.html][学习Python]]资源
+   - [[https://www.fullstackpython.com/best-python-resources.html][Best Python Resources]] Full Stack Python 本身也是很好的学习资源
+
+* 第5周 编程风格与命令行开发
+** 本周目标
+   了解Python编程风格及命令行开发工具.
+
+   Python code style 业界现在有两个标准，PEP8 以及 [[https://google.github.io/styleguide/pyguide.html][Google Python Style Guide]]
+   项目组采用PEP8标准，对于Google Style可以稍作了解
+
+   除了日常在IDE里进行Python开发，开发人员也应该掌握一些在命令行环境下进行编程和debug的技能
+** 阅读材料
+   - [[https://pythonguidecn.readthedocs.io/zh/latest/writing/style.html][代码风格]] [[http://docs.python-guide.org/en/latest/writing/style/][英文版]]
+   - [[https://pythonguidecn.readthedocs.io/zh/latest/dev/virtualenvs.html][虚拟环境]] virtualenv
+   - [[https://pythonguidecn.readthedocs.io/zh/latest/dev/pip-virtualenv.html][Pip和Virtualenv的更多配置]]
+   - [[http://pep8.org/][PEP8]] 建议阅读这个美化过的排版，[[https://www.python.org/dev/peps/pep-0008/][原版]]地址
+   - [[https://github.com/google/yapf][yapf]] Google 出品的自动化格式代码工具，建议了解一下
+*** ipython
+    - [[https://ipython.org/][官网]]
+    - 作为一个交互式shell, 用来代替默认的python命令行编程环境
+      #+BEGIN_SRC shell
+      # 使用以下命令安装python2.7版本的ipython
+      pip install 'ipython<=6.0.0'
+      #+END_SRC
+*** pdb
+    Python debuger, 交互式debug环境。类似于GDB
+    - [[https://pymotw.com/2/pdb/index.html][使用教程]]
+*** vim
+   命令行环境下的编辑器
+   - [[http://www.openvim.com/][交互式的VIM简短教程]] 十分炫酷的简短教程，掌握日常用到的最基本操作
+
+** 编程练习
+   本周没有具体的编程练习，请花一点时间熟悉一下pip/virtualenv/ipython/pdb/vim工具。
+
+   编辑器/IDE是非常重要的工具，在工作过程中几乎所有的开发时间都花这上面，所以不
+   论你喜欢vim/emacs/vs code/atom/sublime text，你应该熟悉你的编程器/IDE。花些时间去了解
+   你喜欢的编程器/IDE
+
+   适当设置好开发环境对于提高开发效率也相当重要，有兴趣可以了解一下扩展阅读里列出的工具
+
+** 扩展阅读
+   - [[https://pythonguidecn.readthedocs.io/zh/latest/dev/env.html][你的开发环境]] [[http://docs.python-guide.org/en/latest/dev/env/][英文版]]
+   - [[https://aaaaaashu.gitbooks.io/mac-dev-setup/content/index.html][Mac 开发配置手册]]
+*** windows开发环境
+    个人推荐 Cygwin + ConEmu + zsh + oh-my-shell + CoreUtils
+    - [[https://cygwin.com/install.html][Cygwin]]
+    - [[https://conemu.github.io/][ConEmu]]
+    - [[http://www.jeffjade.com/2015/07/29/2015-07-29-mac-musthave-software/][终极Shell]] 在Cygwin环境中也可以使用zsh + oh-my-zsh
+    - [[http://gnuwin32.sourceforge.net/packages/coreutils.htm][CoreUtils for Windows]] 常用的liunx命令windows移植
+    - [[http://www.jianshu.com/p/aa19380828bd][配置豪华的 Windows 开发环境]]
+
+* 第6周 标准库及其它
+** 本周目标
+   大概了解下Python标准库, 一些第三库/框架
+** 阅读材料
+*** 标准库
+   - [[https://www.cnblogs.com/vamei/archive/2012/07/18/2597212.html][Python标准库——走马观花]]
+   - [[https://www.cnblogs.com/vamei/archive/2012/08/31/2661870.html][Python标准库01 正则表达式 (re包)]]
+   - [[https://www.cnblogs.com/vamei/archive/2012/09/05/2671198.html][Python标准库03 路径与文件 (os.path包, glob包)]]
+   - [[https://www.cnblogs.com/vamei/archive/2012/09/14/2684775.html][Python标准库04 文件管理 (部分os包，shutil包)]]
+   - [[https://www.cnblogs.com/vamei/archive/2012/09/23/2698014.html][Python标准库06 子进程 (subprocess包)]]
+   - [[https://www.cnblogs.com/vamei/archive/2012/10/11/2720042.html][Python标准库08 多线程与同步 (threading包)]]
+*** 常用库
+**** Oslo
+     Oslo 是由openstack项目衍生出来的一系列python库，为openstack众多项目提供统一的公共功能。
+     #+BEGIN_QUOTE
+     To produce a set of python libraries containing code shared by OpenStack
+     projects. The APIs provided by these libraries should be high quality,
+     stable, consistent, documented and generally applicable
+     #+END_QUOTE
+     - [[https://wiki.openstack.org/wiki/Oslo][官方Wiki Oslo库列表]]
+
+     阅读使用和配置文档，大概了解这些包是用做什么的即可。
+     - oslo.cache
+     - oslo.concurrency
+     - oslo.config
+     - oslo.log
+     - oslo.policy
+     - pbr
+**** SQLAlchemy
+     SQLAlchemy 是一个连接数据库的ORM框架
+     大概了解 SQLAlchemy 的简单使用方式，不要求深入了解
+     - [[https://www.sqlalchemy.org/][官网]]
+     - [[http://www.jianshu.com/p/e6bba189fcbd][简单介绍]]
+     - [[http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0014021031294178f993c85204e4d1b81ab032070641ce5000][简单使用教程]]
+
+* 第7周 开源工具
+** 本周目标
+   了解一些开源工具及项目开发协作相关工具
+
+   由于列出的工具较多，不要求深入了解
+** 阅读材料
+*** Markdown
+    [[https://www.fullstackpython.com/markdown.html][Markdown语法]] 平时写文档时可以使用Markdown语法
+
+    示例网站 https://maxiang.io/
+    可以看到左边为文本内容，右边为渲染后的效果。使用markdown语法，书写文档时不需
+    要关心排版效果，可以专注于内容本身。
+*** Git && Gerrit
+    项目组使用Git进行代码版本管理，使用Git是一项必备技能。如果以前没有使用Git的
+    经验，请务必花一些时间学习。
+    - [[https://github.com/larrycai/sdcamp/blob/master/contents/1-chapter2-git-gerrit.markdown][版本控制Git和代码审阅Gerrit]]
+    - [[https://lvwzhen.gitbooks.io/git-tutorial/content/][Git教程]]
+    - [[https://gerrit-review.googlesource.com/Documentation/intro-quick.html][Gerrit Code Review - A Quick Introduction]]
+*** Jenkins && CI
+    - [[https://gwpost.gitbooks.io/jenkins-the-definitive-guide/content/Introducting%20Jenkins/jie_shao.html][Jenkins与持续集成(CI)介绍]]
+*** tox
+    - [[http://wsfdl.com/python/2015/02/01/Python%E7%9A%84%E6%B5%8B%E8%AF%95%E4%B9%8BTox.html][Python 的单元测试之 tox]]
+    - [[https://tox.readthedocs.io/en/latest/][tox官网介绍]]
+*** 运维利器 Ansible
+    自动化运维工具，可以稍作了解，日常工作中可能会用到ansible工具来批量运行脚本
+    - [[http://www.stay-stupid.com/?p=366][Ansible 简介]] 阅读简介至ad-hoc部分即可
+    - [[https://ansible-tran.readthedocs.io/en/latest/index.html][Ansible中文权威指南]]  如果有兴趣深入了解
+
+* 第8周 实战
+** 本周目标
+   本周为编程练习，创建一个Python项目，并编程完成要求
+
+   这个项目是完成一个命令行工具，可以通过命令行调用来完成数据库表的CUDR操作
+** 编程练习
+*** 申请虚拟机作为开发机，要求CentOS7.2系统
+*** 配置pip文件
+*** 安装并配置PostgreSQL数据库
+    tips: 可以使用 NaviCat pgAdmin 等数据库管理工具
+
+    配置数据库密码为 test123456
+
+    创建database, 名称: cudr
+
+    在 cudr 新建表，表名example
+
+    创建 sql 如下
+    #+BEGIN_SRC sql
+    DROP TABLE IF EXISTS "public"."example";
+    CREATE TABLE "public"."example" (
+    "name" varchar(127) COLLATE "default" NOT NULL,
+    "code" varchar(63) COLLATE "default" NOT NULL
+    )
+    WITH (OIDS=FALSE)
+    ;
+    ALTER TABLE "public"."example" ADD PRIMARY KEY ("name");
+    #+END_SRC
+*** 创建一个Python项目
+    项目名称 cudr
+
+    项目结构请阅读[[https://pythonguidecn.readthedocs.io/zh/latest/writing/structure.html][结构化你的工程]] 中仓库的结构一节，关于 Django Applications及之后的章节可跳过
+
+    在 requirements.txt 文件中指定项目依赖库
+    #+BEGIN_EXAMPLE
+    sqlalchemy
+    click
+    #+END_EXAMPLE
+
+    使用pip安装依赖
+    #+BEGIN_SRC shell
+    pip install -r requirements.txt
+    #+END_SRC
+**** click 用于创建命令行工具
+     - [[http://click.pocoo.org/5/][官网]]
+     - [[http://www.jianshu.com/p/d2b61a892c32][简单使用教程]]
+**** sqlalchemy 数据库ORM工具
+*** 编程
+    在 cudr/core.py 中完成具体的代码工作
+
+    具体代码实现以及命令行使用参数的设计可以自由发挥
+
+    最终效果要求可以完成类似以下功能(不要求和下面示例代码中一样)
+    - 创建
+    - 读取
+    - 修改
+    - 删除
+    #+BEGIN_SRC shell
+    # 创建一个数据库记录
+    python core.py --create name1 code1
+    # 读取
+    python core.py --read name1
+    # 修改 指定主键name1及更新的字段及字段的新值
+    python core.py --update name1 name=name2
+    # 删除
+    python core.py --delete name2
+    #+END_SRC
